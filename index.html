@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Water Intake Tracker</title>
+    <script defer src="./main.js"></script>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Daily Water Intake Tracker</h1>
+        <div class="alert">YOU'VE DRANK ENOUGH FOR TODAY!</div>
+    </header>
+
+    <div class="main-body">
+        <div class="tracker">
+            <p>Today's Date:<span id=curDate></span></p>
+            <p>Daily Water Target:<span style="font-weight: bold; color: black;"> 5 Litres</span></p>
+            <p>Current Hydration:<span id=curIntake></span></p>
+        </div>
+        <div class="bottle">
+            <div class="water">
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="add">+</button>
+            <button class="minus" disabled>-</button>
+            <button class="start-over">Start Over</button>
+        </div>
+    </div>
+</body>
+
+</html>
